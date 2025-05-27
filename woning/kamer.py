@@ -8,7 +8,7 @@ class Kamer:
         self.apparatten = []
         self.bewoners = []
 
-    def add_device(self, apparaat: Apparaat):
+    def add_apparaat(self, apparaat: Apparaat):
         self.apparatten.append(apparaat)
 
     def add_bewoner(self, resident):

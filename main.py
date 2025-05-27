@@ -22,11 +22,15 @@ def get_user_modus():
     while not update_interval.isdigit() or not 2 <= int(update_interval) <= 10:
         update_interval = input("Ongeldige interval. Geef een waarde tussen 2-10: ")
 
-    simulate_time = input("\nWilt u de dag/nacht cyclus simuleren? (ja/nee): ").lower()
-    while simulate_time not in ["ja", "nee"]:
-        simulate_time = input("Ongeldige invoer. Kies ja/nee: ").lower()
+    if mode == "normaal":
+        simulate_time = input("\nWilt u de dag/nacht cyclus simuleren? (ja/nee): ").lower()
+        while simulate_time not in ["ja", "nee"]:
+            simulate_time = input("Ongeldige invoer. Kies ja/nee: ").lower()
+        simulate_time = simulate_time == "ja"
+    else:
+        simulate_time = False
 
-    return mode, int(update_interval), simulate_time == "ja"
+    return mode, int(update_interval), simulate_time
 
 
 if __name__ == "__main__":
@@ -42,26 +46,26 @@ if __name__ == "__main__":
     for kamer in [woonkamer, keuken, slaapkamer, badkamer, gang]:
         home.add_kamer(kamer)
 
-    woonkamer.add_device(Lamp("Woonkamer Lamp"))
-    woonkamer.add_device(Bewegingsensor("Woonkamer Bewegingsensor"))
-    woonkamer.add_device(Gordijn("Woonkamer Gordijn"))
-    woonkamer.add_device(Deurslot("Woonkamer Deurslot"))
+    woonkamer.add_apparaat(Lamp("Woonkamer Lamp"))
+    woonkamer.add_apparaat(Bewegingsensor("Woonkamer Bewegingsensor"))
+    woonkamer.add_apparaat(Gordijn("Woonkamer Gordijn"))
+    woonkamer.add_apparaat(Deurslot("Woonkamer Deurslot"))
 
-    keuken.add_device(Lamp("Keuken Lamp"))
-    keuken.add_device(Bewegingsensor("Keuken Bewegingssensor"))
-    keuken.add_device(RookSensor("Keuken Rookmelder"))
-    keuken.add_device(Thermostaat("Keuken Thermostaat"))
+    keuken.add_apparaat(Lamp("Keuken Lamp"))
+    keuken.add_apparaat(Bewegingsensor("Keuken Bewegingsensor"))
+    keuken.add_apparaat(RookSensor("Keuken Rookmelder"))
+    keuken.add_apparaat(Thermostaat("Keuken Thermostaat"))
 
-    slaapkamer.add_device(Lamp("Slaapkamer Lamp"))
-    slaapkamer.add_device(Bewegingsensor("Slaapkamer Bewegingssensor"))
-    slaapkamer.add_device(Gordijn("Slaapkamer Gordijn"))
+    slaapkamer.add_apparaat(Lamp("Slaapkamer Lamp"))
+    slaapkamer.add_apparaat(Bewegingsensor("Slaapkamer Bewegingsensor"))
+    slaapkamer.add_apparaat(Gordijn("Slaapkamer Gordijn"))
 
-    badkamer.add_device(Lamp("Badkamer Lamp"))
-    badkamer.add_device(Bewegingsensor("Badkamer Bewegingssensor"))
+    badkamer.add_apparaat(Lamp("Badkamer Lamp"))
+    badkamer.add_apparaat(Bewegingsensor("Badkamer Bewegingssensor"))
 
-    gang.add_device(Lamp("Gang Lamp"))
-    gang.add_device(Bewegingsensor("Gang Bewegingssensor"))
-    gang.add_device(Deurslot("Voordeur"))
+    gang.add_apparaat(Lamp("Gang Lamp"))
+    gang.add_apparaat(Bewegingsensor("Gang Bewegingssensor"))
+    gang.add_apparaat(Deurslot("Voordeur"))
 
     bewoner1 = Bewoner("Jan")
     bewoner2 = Bewoner("Marie")
@@ -69,6 +73,8 @@ if __name__ == "__main__":
     home.add_bewoner(bewoner2)
 
     mode, update_interval, simulate_time = get_user_modus()
+    if mode in ["nacht", "vakantie"]:
+        simulate_time = False
     home.set_modus(mode)
 
     print("\nSmart Home Simulatie gestart...")

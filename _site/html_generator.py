@@ -4,13 +4,10 @@ from .style_generator import StyleGenerator
 
 
 class HTMLGenerator:
-    @staticmethod
     def generate_home_status(home, output_dir="_site"):
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
-
         StyleGenerator.generate_css(output_dir)
-
         with open(f"{output_dir}/index.html", "w", encoding="utf-8") as f:
             f.write(
                 f"""<!DOCTYPE html>
@@ -23,6 +20,7 @@ class HTMLGenerator:
 <body>
     <div class="header">
         <h1>Slimme Woning</h1>
+        <div class="modus">Modus: {home.mode.capitalize()}</div>
     </div>
     <div class="main-content">
         <div class="container">
@@ -71,7 +69,5 @@ class HTMLGenerator:
 """
             )
         return f"HTML statuspagina en stijl gegenereerd in {output_dir}/index.html en style.css"
-
-    @staticmethod
     def genereer_woning_status(woning, output_dir="_site"):
         return HTMLGenerator.generate_home_status(woning, output_dir)
