@@ -1,0 +1,101 @@
+[2025-05-27 11:23:10] Jan is nu in de kamer: Gang
+[2025-05-27 11:23:10] Lampen aangezet in Gang
+[2025-05-27 11:23:10] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:23:15] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:23:20] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:23:25] Marie is nu in de kamer: Badkamer
+[2025-05-27 11:23:25] Lampen aangezet in Badkamer
+[2025-05-27 11:23:25] Apparaten uit in: Woonkamer, Keuken, Slaapkamer
+[2025-05-27 11:23:30] Apparaten uit in: Woonkamer, Keuken, Slaapkamer
+[2025-05-27 11:23:35] Apparaten uit in: Woonkamer, Keuken, Slaapkamer
+[2025-05-27 11:23:40] Apparaten uit in: Woonkamer, Keuken, Slaapkamer
+[2025-05-27 11:23:45] Apparaten uit in: Woonkamer, Keuken, Slaapkamer
+[2025-05-27 11:23:50] Marie is nu in de kamer: Woonkamer
+[2025-05-27 11:23:50] Lampen aangezet in Woonkamer
+[2025-05-27 11:23:50] Apparaten uit in: Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:23:55] Marie is nu in de kamer: Gang
+[2025-05-27 11:23:55] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:24:00] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:24:05] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:24:10] Jan is nu in de kamer: Keuken
+[2025-05-27 11:24:10] Lampen aangezet in Keuken
+[2025-05-27 11:24:10] Apparaten uit in: Woonkamer, Slaapkamer, Badkamer
+[2025-05-27 11:24:15] Apparaten uit in: Woonkamer, Slaapkamer, Badkamer
+[2025-05-27 11:24:20] Apparaten uit in: Woonkamer, Slaapkamer, Badkamer
+[2025-05-27 11:48:52] Jan is nu in de kamer: Keuken
+[2025-05-27 11:48:52] Lampen aangezet in Keuken
+[2025-05-27 11:48:52] Apparaten uit in: Woonkamer, Slaapkamer, Badkamer, Gang
+[2025-05-27 11:48:57] Jan is nu in de kamer: Gang
+[2025-05-27 11:48:57] Lampen aangezet in Gang
+[2025-05-27 11:48:57] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:49:02] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:49:07] Jan is nu in de kamer: Badkamer
+[2025-05-27 11:49:07] Marie is nu in de kamer: Keuken
+[2025-05-27 11:49:07] Lampen aangezet in Keuken
+[2025-05-27 11:49:07] Apparaten uit in: Woonkamer, Slaapkamer, Gang
+[2025-05-27 11:49:07] Badkamer Lamp aangeschakeld
+[2025-05-27 11:49:12] ALARM: Keuken Rookmelder Rook decteert in Keuken!
+[2025-05-27 11:49:17] Apparaten uit in: Woonkamer, Slaapkamer, Gang
+[2025-05-27 11:49:22] Apparaten uit in: Woonkamer, Slaapkamer, Gang
+[2025-05-27 11:49:27] Jan is nu in de kamer: Slaapkamer
+[2025-05-27 11:49:27] Apparaten uit in: Woonkamer, Badkamer, Gang
+[2025-05-27 11:49:27] Slaapkamer Lamp aangeschakeld
+[2025-05-27 11:49:32] Apparaten uit in: Woonkamer, Badkamer, Gang
+[2025-05-27 11:49:41] Woning in nacht-modus gezet
+[2025-05-27 11:49:41] Jan is nu in de kamer: Woonkamer
+[2025-05-27 11:49:41] Apparaten uit in: Keuken, Slaapkamer, Badkamer, Gang
+[2025-05-27 11:49:41] Woonkamer Lamp aangeschakeld
+[2025-05-27 11:49:43] Apparaten uit in: Keuken, Slaapkamer, Badkamer, Gang
+[2025-05-27 11:49:45] Apparaten uit in: Keuken, Slaapkamer, Badkamer, Gang
+[2025-05-27 11:49:47] Apparaten uit in: Keuken, Slaapkamer, Badkamer, Gang
+[2025-05-27 11:49:49] Jan is nu in de kamer: Gang
+[2025-05-27 11:49:49] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:49:49] Gang Lamp aangeschakeld
+[2025-05-27 11:49:51] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer
+[2025-05-27 11:49:53] Marie is nu in de kamer: Badkamer
+[2025-05-27 11:49:53] Apparaten uit in: Woonkamer, Keuken, Slaapkamer
+[2025-05-27 11:49:53] Badkamer Lamp aangeschakeld
+[2025-05-27 11:49:55] Jan is nu in de kamer: Keuken
+[2025-05-27 11:49:55] Marie is nu in de kamer: Slaapkamer
+[2025-05-27 11:49:55] Apparaten uit in: Woonkamer, Badkamer, Gang
+[2025-05-27 11:49:55] Keuken Lamp aangeschakeld
+[2025-05-27 11:49:55] Slaapkamer Lamp aangeschakeld
+[2025-05-27 11:50:02] Woning in vakantie-modus gezet
+[2025-05-27 11:50:02] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer, Gang
+[2025-05-27 11:50:02] Woning in normaal-modus gezet
+[2025-05-27 11:50:04] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer, Gang
+[2025-05-27 11:50:13] Woning in vakantie-modus gezet
+[2025-05-27 11:50:13] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer, Gang
+[2025-05-27 11:50:13] Woning in normaal-modus gezet
+[2025-05-27 11:50:15] Apparaten uit in: Woonkamer, Keuken, Slaapkamer, Badkamer, Gang
+[2025-05-27 11:50:19] Woning in vakantie-modus gezet
+[2025-05-27 11:50:19] Jan is nu in de kamer: Keuken
+[2025-05-27 11:50:19] Marie is nu in de kamer: Slaapkamer
+[2025-05-27 11:50:19] Lampen aangezet in Keuken
+[2025-05-27 11:50:19] Apparaten uit in: Woonkamer, Badkamer, Gang
+[2025-05-27 11:50:19] Slaapkamer Lamp aangeschakeld
+[2025-05-27 11:50:21] Jan is nu in de kamer: Badkamer
+[2025-05-27 11:50:21] Marie is nu in de kamer: Keuken
+[2025-05-27 11:50:21] Apparaten uit in: Woonkamer, Slaapkamer, Gang
+[2025-05-27 11:50:21] Badkamer Lamp aangeschakeld
+[2025-05-27 11:50:23] Jan is nu in de kamer: Slaapkamer
+[2025-05-27 11:50:23] Apparaten uit in: Woonkamer, Badkamer, Gang
+[2025-05-27 11:50:23] Slaapkamer Lamp aangeschakeld
+[2025-05-27 11:50:25] Apparaten uit in: Woonkamer, Badkamer, Gang
+[2025-05-27 11:50:27] Apparaten uit in: Woonkamer, Badkamer, Gang
+[2025-05-27 11:50:29] Apparaten uit in: Woonkamer, Badkamer, Gang
+[2025-05-27 11:50:31] Apparaten uit in: Woonkamer, Badkamer, Gang
+[2025-05-27 12:58:54] Jan is nu in de kamer: Woonkamer
+[2025-05-27 12:58:54] Lampen aangezet in Woonkamer
+[2025-05-27 12:58:54] Apparaten uit in: Keuken, Slaapkamer, Badkamer, Gang
+[2025-05-27 12:58:57] Apparaten uit in: Keuken, Slaapkamer, Badkamer, Gang
+[2025-05-27 12:59:00] Marie is nu in de kamer: Gang
+[2025-05-27 12:59:00] Apparaten uit in: Keuken, Slaapkamer, Badkamer
+[2025-05-27 12:59:00] Gang Lamp aangeschakeld
+[2025-05-27 12:59:03] Apparaten uit in: Keuken, Slaapkamer, Badkamer
+[2025-05-27 12:59:06] Apparaten uit in: Keuken, Slaapkamer, Badkamer
+[2025-05-27 12:59:09] Jan is nu in de kamer: Badkamer
+[2025-05-27 12:59:09] Marie is nu in de kamer: Keuken
+[2025-05-27 12:59:09] Lampen aangezet in Keuken
+[2025-05-27 12:59:09] Apparaten uit in: Woonkamer, Slaapkamer, Gang
+[2025-05-27 12:59:09] Badkamer Lamp aangeschakeld

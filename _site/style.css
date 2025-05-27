@@ -1,0 +1,134 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(120deg, white 0%, white 100%);
+    min-height: 100vh;
+}
+
+.header {
+    background: gray;
+    color: white;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 1rem 0.5rem rgba(25, 118, 210, 0.1);
+    margin-bottom: 2rem;
+}
+
+.main-content {
+    display: flex;
+    gap: 2rem;
+    max-width: 95vw;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.container {
+    flex: 1;
+}
+
+.logger-section {
+    width: 350px;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(25, 118, 210, 0.08);
+    height: fit-content;
+    position: sticky;
+    top: 1rem;
+    margin-right: 1rem;
+    border-left: 0.5rem solid gray;
+}
+
+.logger-section h2 {
+    color: gray;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+.log-entry {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.log-entry .timestamp {
+    color: #999;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.kamer {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(25, 118, 210, 0.08);
+    margin-bottom: 2rem;
+    padding: 2rem 2rem;
+    border-left: 1rem solid gray;
+    transition: box-shadow 0.2s;
+}
+
+.kamer:hover {
+    box-shadow: 0 1rem 1rem rgba(25, 118, 210, 0.18);
+}
+
+h2 {
+    color: black;
+    margin-top: 0;
+}
+
+.bewoners {
+    color: black;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.bewoners.leeg {
+    color: black;
+}
+
+.apparaat {
+    margin: 0.5rem 0;
+    padding: 1rem 1rem;
+    background: white;
+    border-radius: 1rem;
+    display: inline-block;
+    font-size: 1.05rem;
+    color: black;
+    box-shadow: 0 1rem 2rem rgba(13, 71, 161, 0.07);
+}
+
+.tijdstip {
+    color: black;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .logger-section {
+        width: auto;
+        margin: 1rem;
+        position: static;
+    }
+
+    .container {
+        max-width: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .kamer {
+        padding: 1rem 1rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
