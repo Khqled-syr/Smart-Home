@@ -54,5 +54,5 @@ _site/index.html
 De pagina ververst automatisch elke 5 seconden om de laatste status te tonen.
 
 ## Gemaakt Door
-Khaled Saada
+Khaled
 AP Hogeschool, 2024-2025
