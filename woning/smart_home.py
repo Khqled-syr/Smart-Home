@@ -32,7 +32,7 @@ class SmartHome:
     def add_kamer(self, kamer: Kamer):
         self.kamers.append(kamer)
         for apparaat in kamer.apparatten:
-            if isinstance(apparaat, Gordijn):
+            if type(apparaat).__name__ == "Gordijn":
                 self.gordijnen_status[apparaat.name] = None
 
     def add_bewoner(self, bewoner: Bewoner):
@@ -47,14 +47,14 @@ class SmartHome:
     def initialize_modus(self):
         for kamer in self.kamers:
             for apparaat in kamer.apparatten:
-                if isinstance(apparaat, Lamp):
+                if type(apparaat).__name__ == "Lamp":
                     if self.mode == "nacht":
                         apparaat.zet_uit()
                         apparaat.set_brightness(30)
                     elif self.mode == "vakantie":
                         apparaat.zet_uit()
                         apparaat.set_brightness(50)
-                elif isinstance(apparaat, Gordijn):
+                elif type(apparaat).__name__ == "Gordijn":
                     if self.mode == "vakantie":
                         apparaat.close()
 
@@ -63,7 +63,7 @@ class SmartHome:
     def refresh_deurs(self):
         for kamer in self.kamers:
             for apparaat in kamer.apparatten:
-                if isinstance(apparaat, Deurslot):
+                if type(apparaat).__name__ == "Deurslot":
                     if self.mode in ["nacht", "vakantie"]:
                         apparaat.lock_door()
                     else:
@@ -78,9 +78,9 @@ class SmartHome:
             for kamer in home.kamers:
                 if kamer.check_bewoners():
                     motion_sensors = [
-                        d for d in kamer.apparatten if isinstance(d, Bewegingsensor)
+                        d for d in kamer.apparatten if type(d).__name__ == "Bewegingsensor"
                     ]
-                    lamps = [d for d in kamer.apparatten if isinstance(d, Lamp)]
+                    lamps = [d for d in kamer.apparatten if type(d).__name__ == "Lamp"]
                     if motion_sensors and lamps and home.mode != "nacht":
                         return True, kamer, lamps
             return False, None, None
@@ -102,9 +102,9 @@ class SmartHome:
             for kamer in home.kamers:
                 if not kamer.check_bewoners():
                     for apparaat in kamer.apparatten:
-                        if isinstance(apparaat, Lamp):
+                        if type(apparaat).__name__ == "Lamp":
                             apparaat.zet_uit()
-                        elif isinstance(apparaat, Bewegingsensor):
+                        elif type(apparaat).__name__ == "Bewegingsensor":
                             apparaat.detect_motion(False)
                     kamers_uitgezet.append(kamer.name)
 
@@ -113,7 +113,7 @@ class SmartHome:
                     if home.smoke_timer >= 5:
                         home.smoke_timer = 0
                         for apparaat in kamer.apparatten:
-                            if isinstance(apparaat, RookSensor):
+                            if type(apparaat).__name__ == "RookSensor":
                                 if kamer.check_bewoners():
                                     if random.random() < 0.1:
                                         return f"ALARM: {apparaat.detect_smoke(True)} in Keuken!"
@@ -135,7 +135,7 @@ class SmartHome:
 
         for kamer in self.kamers:
             for apparaat in kamer.apparatten:
-                if isinstance(apparaat, Lamp):
+                if type(apparaat).__name__ == "Lamp":
                     if self.mode == "nacht":
                         apparaat.set_brightness(30)
                     elif self.mode == "vakantie":
@@ -149,7 +149,7 @@ class SmartHome:
 
             if not kamer.check_bewoners():
                 for apparaat in kamer.apparatten:
-                    if isinstance(apparaat, Bewegingsensor):
+                    if type(apparaat).__name__ == "Bewegingsensor":
                         apparaat.detect_motion(False)
 
         for resident in self.residents:
@@ -162,7 +162,7 @@ class SmartHome:
                         events.append(("movement", resident, target_room))
 
                         for apparaat in target_room.apparatten:
-                            if isinstance(apparaat, Bewegingsensor):
+                            if type(apparaat).__name__ == "Bewegingsensor":
                                 sensor_message = apparaat.detect_motion(True)
                                 if sensor_message:
                                     self.logger.log(sensor_message)
@@ -174,9 +174,9 @@ class SmartHome:
         self.smart_hub.process_events(self)
 
         for event_type, source, target in events:
-            if event_type == "movement" and isinstance(target, Kamer):
+            if event_type == "movement" and type(target).__name__ == "Kamer":
                 for apparaat in target.apparatten:
-                    if isinstance(apparaat, Lamp) and not apparaat.status:
+                    if type(apparaat).__name__ == "Lamp" and not apparaat.status:
                         message = apparaat.zet_aan()
                         if message:
                             self.logger.log(message)
@@ -186,7 +186,7 @@ class SmartHome:
     def update_gordijnen(self, zonnig: bool):
         for kamer in self.kamers:
             for apparaat in kamer.apparatten:
-                if isinstance(apparaat, Gordijn):
+                if type(apparaat).__name__ == "Gordijn":
                     current_status = "dicht" if apparaat.is_closed() else "open"
                     if self.gordijnen_status.get(apparaat.name) != current_status:
                         apparaat.update_on_weather(zonnig)
